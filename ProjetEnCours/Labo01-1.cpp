@@ -14,7 +14,7 @@
 					// Sur ces peripheriques les données circulent => flux : stream
 
 using namespace std; // Nous évite de mettre std :: avant chq cout plus bas
-void main()
+void main() // Void est un type qui permet de dire a la fonction si elle donne un résultat ou non
 // Toutes instruction doit etre mise entre accolades qui délimitent un bloc d'instructions
 // L'accolade ouvrante doit tjrs etre au dessus de l'accolade fermante
 {			//Ouvre le bloc d'instruction
