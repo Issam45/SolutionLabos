@@ -23,18 +23,8 @@ int main()
 	setlocale(LC_ALL, "");
 
 
-
-	cout << "Rentrer votre premier nombre entier: ";
-	// On va lire l'info tapée sur le clavier (périphérique d'entrée : input : canal d'entrée : cin)
-	cin >> entier1;
-
-	cout << "Rentrer votre deuxième nombre entier: ";
-
-	cin >> entier2;
-
-	/*while (entier1 & entier2 != )
+	while (1)
 	{
-
 		cout << "Rentrer votre premier nombre entier: ";
 		// On va lire l'info tapée sur le clavier (périphérique d'entrée : input : canal d'entrée : cin)
 		cin >> entier1;
@@ -43,24 +33,32 @@ int main()
 
 		cin >> entier2;
 
+		/*if (entier1 & entier2 != )
+		{
+
+			/*cout << "Rentrer votre deuxième nombre entier: ";
+
+			cin >> entier2;
 
 
-		somme = entier1 + entier2;
+
+			somme = entier1 + entier2;
+
+			cout << endl;
+
+			cout << "La somme des deux nombres entier est de " << somme << endl;
+
+
+
+		}*/
+
+			somme = entier1 + entier2;
 
 		cout << endl;
 
 		cout << "La somme des deux nombres entier est de " << somme << endl;
 
-
-		
-	}*/
-
-	somme = entier1 + entier2;
-
-	cout << endl;
-
-	cout << "La somme des deux nombres entier est de " << somme << endl;
-
-	return 0;
+		return 0;
+	}
 }
 
