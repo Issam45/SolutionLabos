@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PairImpaircpp.cpp" />
     <ClCompile Include="Vertical.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
