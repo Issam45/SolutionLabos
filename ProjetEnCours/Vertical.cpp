@@ -26,29 +26,33 @@ int main()
 
 	cin >> cinq;
 
-	if (cinq >= 10000 || cinq <= 99999)
+	cout << endl;
+
+	if (cinq >= 10000 && cinq <= 99999)
 	{
 		nb1 = (cinq % 100000)/10000;
 		nb2 = (cinq % 10000)/1000;
 		nb3 = (cinq % 1000)/100;
 		nb4 = (cinq % 100)/10;
 		nb5 = cinq % 10;
+
+		cout << nb1 << endl;
+		cout << nb2 << endl;
+		cout << nb3 << endl;
+		cout << nb4 << endl;
+		cout << nb5 << endl;	
+		
+		cout << endl;
+
+
+	cout << "\t \t---------------------------Voici le résultat! Bonne journée ;)-------------------------------- \n";
 	}
 	else
 	{
 		cout << "Erreur! Ce nombre ne contient pas cinq chiffres!";
+
+		cout << endl;
 	}
-	cout << endl;
-
-	cout << nb1 << endl;
-	cout << nb2 << endl;
-	cout << nb3 << endl;
-	cout << nb4 << endl;
-	cout << nb5 << endl;
-
-
-	
-
 
 	return 0;
 }
