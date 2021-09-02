@@ -1,4 +1,4 @@
-// But : Écrire un programme qui demande un nombre positif cinq chiffre a l'utilisateur ni plus ni moins, vérifie qu'il a cinq chiffre puis les affiches verticalement en ordre
+// But : Écrire un programme qui demande un nombre cinq chiffre a l'utilisateur ni plus ni moins, vérifie qu'il a cinq chiffre puis les affiches verticalement en ordre
 // Auteur :	Issam Abdelkrim
 // Date : 2021-08-31
 
@@ -28,7 +28,7 @@ int main()
 
 	cout << endl; // Retour à la ligne
 
-	if (cinq <= -10000 && cinq >= -99999 && cinq >= 10000 && cinq <= 99999) // Rentrer dans le if si la variable cinq est plus grande que 10000 et en même temps plus petite que 99999
+	if (cinq <= -10000 && cinq >= -99999 || cinq >= 10000 && cinq <= 99999) // Rentrer dans le if si la variable cinq est plus grande que 10000 et en même temps plus petite que 99999 ou plus petite ou égale a -10000 et plus grande ou égale à -99999.
 	{
 		nb1 =  cinq / 10000; // Calcul pour récupérer juste le premier chiffre à l'aide de la division par 10 000 puisque le nombre contient 5 chiffres
 		nb2 = (cinq % 10000) / 1000; // Calcul pour récupérer le deuxieme chiffre, on utilise modulo 10 000 qui vient prendre que les quatre premier chiffres et ensuite on divise par 1000 pour récupéré juste le 2eme chiffre du nombre complet.
@@ -60,11 +60,11 @@ int main()
 /*
 1. Veuillez rentrer le nombre 12345 --> Le programme doit afficher les 5 chiffres du nombre rentrer en ordre verticalement!
 
-2. Veuillez rentrer le nombre 1234 --> Le programme doit afficher un message d'erreur qui mentionne que votre nombre ne contient pas 5 chiffres ou il est négatif!
+2. Veuillez rentrer le nombre 1234 --> Le programme doit afficher un message d'erreur qui mentionne que votre nombre ne contient pas 5 chiffres!
 
-3. Veuillez rentrer le nombre 123456 --> Le programme doit afficher un message d'erreur qui mentionne que votre nombre ne contient pas 5 chiffres ou il est négatif!
+3. Veuillez rentrer le nombre 123456 --> Le programme doit afficher un message d'erreur qui mentionne que votre nombre ne contient pas 5 chiffres!
 
-4. Veuillez rentrer le nombre -12345 --> Le programme doit afficher un message d'erreur qui mentionne que votre nombre ne contient pas 5 chiffres ou il est négatif!
+4. Veuillez rentrer le nombre -12345 --> Le programme doit afficher un message d'erreur qui mentionne que votre nombre ne contient pas 5 chiffres!
 
-5. Veuillez rentrer le nombre 123456 --> Le programme doit afficher un message d'erreur qui mentionne que votre nombre ne contient pas 5 chiffres ou il est négatif!
+5. Veuillez rentrer le nombre 123456 --> Le programme doit afficher un message d'erreur qui mentionne que votre nombre ne contient pas 5 chiffres!
 */
