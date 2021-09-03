@@ -28,32 +28,35 @@ int main()
 
 	cout << endl; // Retour à la ligne
 
-	if (cinq <= -10000 && cinq >= -99999 || cinq >= 10000 && cinq <= 99999) // Rentrer dans le if si la variable cinq est plus grande que 10000 et en même temps plus petite que 99999 ou plus petite ou égale a -10000 et plus grande ou égale à -99999.
-	{
-		nb1 =  cinq / 10000; // Calcul pour récupérer juste le premier chiffre à l'aide de la division par 10 000 puisque le nombre contient 5 chiffres
-		nb2 = (cinq % 10000) / 1000; // Calcul pour récupérer le deuxieme chiffre, on utilise modulo 10 000 qui vient prendre que les quatre premier chiffres et ensuite on divise par 1000 pour récupéré juste le 2eme chiffre du nombre complet.
-		nb3 = (cinq % 1000) / 100; // Ainsi de suite
-		nb4 = (cinq % 100) / 10;
-		nb5 = cinq % 10;
+	//while (cinq != 9999)
+	//{
+		if (cinq <= -10000 && cinq >= -99999 || cinq >= 10000 && cinq <= 99999) // Rentrer dans le if si la variable cinq est plus grande que 10000 et en même temps plus petite que 99999 ou plus petite ou égale a -10000 et plus grande ou égale à -99999.
+		{
+			nb1 = cinq / 10000; // Calcul pour récupérer juste le premier chiffre à l'aide de la division par 10 000 puisque le nombre contient 5 chiffres
+			nb2 = (cinq % 10000) / 1000; // Calcul pour récupérer le deuxieme chiffre, on utilise modulo 10 000 qui vient prendre que les quatre premier chiffres et ensuite on divise par 1000 pour récupéré juste le 2eme chiffre du nombre complet.
+			nb3 = (cinq % 1000) / 100; // Ainsi de suite
+			nb4 = (cinq % 100) / 10;
+			nb5 = cinq % 10;
 
-		cout << nb1 << endl; // Afficher les résultats des calculs juste au-dessus
-		cout << nb2 << endl;
-		cout << nb3 << endl;
-		cout << nb4 << endl;
-		cout << nb5 << endl;
+			cout << nb1 << endl; // Afficher les résultats des calculs juste au-dessus
+			cout << nb2 << endl;
+			cout << nb3 << endl;
+			cout << nb4 << endl;
+			cout << nb5 << endl;
 
-		cout << endl;
+			cout << endl;
 
 
-		cout << "\t \t---------------------------Voici le résultat! Bonne journée ;)-------------------------------- \n";
-	}
-	else
-	{
-		cout << "Erreur! Ce nombre ne contient pas cinq chiffres ou il est négatif!"; // Affiche un message d'erreurs car le nombre ne contient pas 5 chiffres
+			cout << "\t \t---------------------------Voici le résultat! Bonne journée ;)-------------------------------- \n";
+		}
+		else
+		{
+			cout << "Erreur! Ce nombre ne contient pas cinq chiffres ou il est négatif!"; // Affiche un message d'erreurs car le nombre ne contient pas 5 chiffres
 
-		cout << endl;
-	}
-
+			cout << endl;
+		}
+	//}
+	system("pause");
 	return 0;
 }
 

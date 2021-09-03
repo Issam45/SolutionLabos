@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Vertical.cpp">
+    <ClCompile Include="Labo02-4MaxComparaison.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
